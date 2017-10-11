@@ -2,6 +2,8 @@
 
 Do lightweight ad-hoc analysis of your personal finances with a  simple docker-based mysql database created from a mint.com transaction export.
 
+This is not intended to be a place to store your accounts long-term; each import will overwrite everything that's in the database. It's good for figuring out how the heck you spent every last penny that came in the door last month.
+
 ## Prerequisites
 
 You'll need docker, perl, and make.
@@ -19,4 +21,4 @@ In the MintDB directory, run make. That will:
 * Load `account.sql` into a table named `account` in the database `budget`. The database is stored in `./data`.
 * Create a second docker container running a mysql client, connected to the mysql server.
 
-
+You'll have a mysql shell running. Query away.
