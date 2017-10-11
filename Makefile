@@ -5,7 +5,7 @@ BASEDIR := ${PWD}
 
 .PHONY: all loader client
 
-all: account.sql
+all: client
 
 server:
 	@ mkdir -p data
