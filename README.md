@@ -6,7 +6,7 @@ This is not intended to be a place to store your accounts long-term; each import
 
 ## Prerequisites
 
-You'll need docker, perl, and make.
+You'll need docker, perl, and make, and of course some familiarity with SQL.
 
 ## Usage
 
