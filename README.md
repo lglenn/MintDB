@@ -14,8 +14,8 @@ Stick that file in the MintDB directory.
 
 In the MintDB directory, run make. That will: 
 
-* Transform the data in `transactions.csv` into SQL inserts in a file named `account.sql`
-* Create a docker container running mysql
+* Transform the data in `transactions.csv` into SQL inserts in a file named `account.sql`.
+* Create a docker container running a mysql server.
 * Load `account.sql` into a table named `account` in the database `budget`. The database is stored in `./data`.
 * Create a second docker container running a mysql client, connected to the mysql server.
 
