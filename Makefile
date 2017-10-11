@@ -7,6 +7,7 @@ DB_NAME := budget
 all: account.sql
 
 server:
+	@ mkdir -p data
 	docker ps | egrep ' ${SERVER_IMAGE}$$' || \
 			docker run --env MYSQL_ROOT_PASSWORD=${PW} --volume ${PWD}/data:/var/lib/mysql --name ${SERVER_IMAGE} --detach mysql && echo "Giving mysqld a few secs to start up... " && sleep 5 && echo "done.";
 
